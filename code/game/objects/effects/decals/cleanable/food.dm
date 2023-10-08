@@ -28,7 +28,7 @@
 
 /obj/effect/decal/cleanable/food/salt
 	name = "Купа солі"
-	desc = "Чимала купа столової солі. Хтось явно посвариться."
+	desc = "Чимала купа столової солі. Скоро хтось посвариться."
 	icon_state = "salt_pile"
 	var/safepasses = 3 //how many times can this salt pile be passed before dissipating
 
