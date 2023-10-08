@@ -2,7 +2,7 @@
 
 /obj/effect/decal/cleanable/xenoblood
 	name = "Ксено-кров"
-	desc = "Вона зелена і кислотна. Схоже це...<i>кров?</i>>"
+	desc = "Вона зелена і кислотна. Схоже це...<i>кров?</i>"
 	icon = 'icons/effects/blood.dmi'
 	icon_state = "xfloor1"
 	random_icon_states = list("xfloor1", "xfloor2", "xfloor3", "xfloor4", "xfloor5", "xfloor6", "xfloor7")
