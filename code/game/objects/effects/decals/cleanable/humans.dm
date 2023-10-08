@@ -1,6 +1,6 @@
 /obj/effect/decal/cleanable/blood
-	name = "blood"
-	desc = "It's red and gooey. Perhaps it's the chef's cooking?"
+	name = "Кров"
+	desc = "Червона і липка. Може, кухар готує?"
 	icon = 'icons/effects/blood.dmi'
 	icon_state = "floor1"
 	random_icon_states = list("floor1", "floor2", "floor3", "floor4", "floor5", "floor6", "floor7")
@@ -9,8 +9,8 @@
 	beauty = -100
 	clean_type = CLEAN_TYPE_BLOOD
 	var/should_dry = TRUE
-	var/dryname = "dried blood" //when the blood lasts long enough, it becomes dry and gets a new name
-	var/drydesc = "Looks like it's been here a while. Eew." //as above
+	var/dryname = "Засохла кров" //when the blood lasts long enough, it becomes dry and gets a new name
+	var/drydesc = "Здається, вона тут вже давно. Гидота." //as above
 	var/drytime = 0
 
 /obj/effect/decal/cleanable/blood/Initialize(mapload)
@@ -80,16 +80,16 @@
 
 /obj/effect/decal/cleanable/blood/tracks
 	icon_state = "tracks"
-	desc = "They look like tracks left by wheels."
+	desc = "Схоже на сліди, залишені колесами."
 	random_icon_states = null
 	beauty = -50
-	dryname = "dried tracks"
-	drydesc = "Some old bloody tracks left by wheels. Machines are evil, perhaps."
+	dryname = "Засохлі сліди"
+	drydesc = "Старі криваві сліди від коліс. Ймовірно, машини - це зло."
 
 /obj/effect/decal/cleanable/trail_holder //not a child of blood on purpose
-	name = "blood"
+	name = "Кров"
 	icon = 'icons/effects/blood.dmi'
-	desc = "Your instincts say you shouldn't be following these."
+	desc = "Ваші інстинкти говорять, що вам не варто йти за ними."
 	beauty = -50
 	var/list/existing_dirs = list()
 
@@ -97,8 +97,8 @@
 	return TRUE
 
 /obj/effect/decal/cleanable/blood/gibs
-	name = "gibs"
-	desc = "They look bloody and gruesome."
+	name = "Нутрощі"
+	desc = "Виглядає криваво та моторошно."
 	icon = 'icons/effects/blood.dmi'
 	icon_state = "gib1"
 	layer = LOW_OBJ_LAYER
@@ -106,8 +106,8 @@
 	random_icon_states = list("gib1", "gib2", "gib3", "gib4", "gib5", "gib6")
 	mergeable_decal = FALSE
 
-	dryname = "rotting gibs"
-	drydesc = "They look bloody and gruesome while some terrible smell fills the air."
+	dryname = "Гнилі нутрощі"
+	drydesc = "Виглядає криваво та моторошно. В повітрі стоїть жахливий сморід."
 	decal_reagent = /datum/reagent/consumable/liquidgibs
 	reagent_amount = 5
 	///Information about the diseases our streaking spawns
@@ -200,13 +200,13 @@
 	random_icon_states = list("gibmid1", "gibmid2", "gibmid3")
 
 /obj/effect/decal/cleanable/blood/gibs/old
-	name = "old rotting gibs"
-	desc = "Space Jesus, why didn't anyone clean this up? They smell terrible."
+	name = "Старі гнилі нутрощі"
+	desc = "Космічний Ісусе, чому це жахіття ніхто не прибрав? Смердить страшенно."
 	icon_state = "gib1-old"
 	bloodiness = 0
 	should_dry = FALSE
-	dryname = "old rotting gibs"
-	drydesc = "Space Jesus, why didn't anyone clean this up? They smell terrible."
+	dryname = "Старі гнилі нутрощі"
+	drydesc = "Космічний Ісусе, чому це жахіття ніхто не прибрав? Смердить страшенно."
 
 /obj/effect/decal/cleanable/blood/gibs/old/Initialize(mapload, list/datum/disease/diseases)
 	. = ..()
@@ -216,14 +216,14 @@
 	dry()
 
 /obj/effect/decal/cleanable/blood/drip
-	name = "drips of blood"
-	desc = "It's red."
+	name = "Кроваві краплі"
+	desc = "Червоні."
 	icon_state = "drip5" //using drip5 since the others tend to blend in with pipes & wires.
 	random_icon_states = list("drip1","drip2","drip3","drip4","drip5")
 	bloodiness = 0
 	var/drips = 1
-	dryname = "drips of blood"
-	drydesc = "It's red."
+	dryname = "Кроваві краплі"
+	drydesc = "Червоні."
 
 /obj/effect/decal/cleanable/blood/drip/can_bloodcrawl_in()
 	return TRUE
@@ -231,8 +231,8 @@
 
 //BLOODY FOOTPRINTS
 /obj/effect/decal/cleanable/blood/footprints
-	name = "footprints"
-	desc = "WHOSE FOOTPRINTS ARE THESE?"
+	name = "Сліди від взуття"
+	desc = "ЧИЇ ЦЕ СЛІДИ?"
 	icon = 'icons/effects/footprints.dmi'
 	icon_state = "blood1"
 	random_icon_states = null
@@ -246,8 +246,8 @@
 	/// List of species that have made footprints here.
 	var/list/species_types = list()
 
-	dryname = "dried footprints"
-	drydesc = "HMM... SOMEONE WAS HERE!"
+	dryname = "Висохлі сліди від взуття"
+	drydesc = "ХММ...ТУТ ХТОСЬ БУВ!"
 
 /obj/effect/decal/cleanable/blood/footprints/Initialize(mapload)
 	. = ..()
@@ -332,7 +332,7 @@ GLOBAL_LIST_EMPTY(bloody_footprints_cache)
 	return FALSE
 
 /obj/effect/decal/cleanable/blood/hitsplatter
-	name = "blood splatter"
+	name = "Криваві плями"
 	pass_flags = PASSTABLE | PASSGRILLE
 	icon_state = "hitsplatter1"
 	random_icon_states = list("hitsplatter1", "hitsplatter2", "hitsplatter3")
