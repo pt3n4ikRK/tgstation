@@ -6,7 +6,7 @@
 
 /obj/effect/decal/cleanable/food/tomato_smudge
 	name = "Томатна пляма"
-	desc = "Червоне."
+	desc = "Червона."
 	icon_state = "tomato_floor1"
 	random_icon_states = list("tomato_floor1", "tomato_floor2", "tomato_floor3")
 
