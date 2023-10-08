@@ -1,6 +1,6 @@
 
 /obj/effect/anomaly/bluespace
-	name = "bluespace anomaly"
+	name = "Блюспейс аномалія"
 	icon = 'icons/obj/weapons/guns/projectiles.dmi'
 	icon_state = "bluespace"
 	density = TRUE
