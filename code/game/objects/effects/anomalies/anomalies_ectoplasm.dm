@@ -1,6 +1,6 @@
 /obj/effect/anomaly/ectoplasm
-	name = "ectoplasm anomaly"
-	desc = "It looks like the souls of the damned are trying to break into the realm of the living again. How upsetting."
+	name = "Ектоплазматична аномалія"
+	desc = "Схоже, що душі проклятих знову намагаються увірватися до світу живих. Доволі прикро."
 	icon_state = "ectoplasm"
 	aSignal = /obj/item/assembly/signaler/anomaly/ectoplasm
 	lifespan = ANOMALY_COUNTDOWN_TIMER + 2 SECONDS //This one takes slightly longer, because it can run away.
@@ -128,8 +128,8 @@
 // Can be destroyed early to the same effect.
 
 /obj/structure/ghost_portal
-	name = "Spooky Portal"
-	desc = "A portal between our dimension and who-knows-where? It's emitting an absolutely ungodly wailing sound."
+	name = "Моторошний портал"
+	desc = "Портал між нашим виміром і хтозна-чим? З нього лунає нечестивий стогін."
 	icon = 'icons/obj/anomaly.dmi'
 	icon_state = "anom"
 	anchored = TRUE
