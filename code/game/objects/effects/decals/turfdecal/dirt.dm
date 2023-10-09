@@ -1,23 +1,23 @@
 /obj/effect/turf_decal/sand
-	name = "sandy floor"
+	name = "Піщана підлога"
 	icon_state = "sandyfloor"
 
 /obj/effect/turf_decal/sand/volcanic
-	name = "ashy floor"
+	name = "Попеляста підлога"
 	icon_state = "ashyfloor"
 
 /obj/effect/turf_decal/sand/plating
-	name = "sandy plating"
+	name = "Піщане покриття"
 	icon_state = "sandyplating"
 
 /obj/effect/turf_decal/lunar_sand
-	name = "dusty floor"
+	name = "Пильна підлога"
 	icon_state = "moonsandfloor"
 
 /obj/effect/turf_decal/lunar_sand/plating
-	name = "dusty plating"
+	name = "Пильне покриття"
 	icon_state = "moonsandplating"
 
 /obj/effect/turf_decal/sand/plating/volcanic
-	name = "ashy plating"
+	name = "Попелясте покриття"
 	icon_state = "ashyplating"
