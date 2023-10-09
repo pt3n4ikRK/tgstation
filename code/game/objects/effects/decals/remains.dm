@@ -1,5 +1,5 @@
 /obj/effect/decal/remains
-	name = "remains"
+	name = "Рештки"
 	gender = PLURAL
 	icon = 'icons/effects/blood.dmi'
 
@@ -11,14 +11,14 @@
 	return TRUE
 
 /obj/effect/decal/remains/human
-	desc = "They look like human remains. They have a strange aura about them."
+	desc = "Схоже вони мають людське походження. Їх оточує дивна аура."
 	icon_state = "remains"
 
 /obj/effect/decal/remains/human/NeverShouldHaveComeHere(turf/here_turf)
 	return !istype(here_turf, /obj/structure/closet/crate/grave/filled) && ..()
 
 /obj/effect/decal/remains/human/smokey
-	desc = "They look like human remains. They have a strange, smokey aura about them..."
+	desc = "Схоже вони мають людське походження. Їх оточує дивна, димчаста аура..."
 	///Our proximity monitor, for detecting nearby looters.
 	var/datum/proximity_monitor/proximity_monitor
 	///The reagent we will release when our remains are disturbed.
@@ -56,17 +56,17 @@
 	return isclosedturf(here_turf)
 
 /obj/effect/decal/remains/xeno
-	desc = "They look like the remains of something... alien. They have a strange aura about them."
+	desc = "Вони схожі на рештки чогось...позаземного. Їх оточує дивна аура."
 	icon_state = "remainsxeno"
 
 /obj/effect/decal/remains/xeno/larva
 	icon_state = "remainslarva"
 
 /obj/effect/decal/remains/robot
-	desc = "They look like the remains of something mechanical. They have a strange aura about them."
+	desc = "Схоже вони мають механічне походження. Їх оточує дивна аура."
 	icon = 'icons/mob/silicon/robots.dmi'
 	icon_state = "remainsrobot"
 
 /obj/effect/decal/cleanable/robot_debris/old
-	name = "dusty robot debris"
-	desc = "Looks like nobody has touched this in a while."
+	name = "Пильні рештки робота"
+	desc = "Давненько цим ніхто не користувався."
