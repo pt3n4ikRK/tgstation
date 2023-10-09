@@ -16,7 +16,7 @@
 	icon_state = "smashed_plant"
 
 /obj/effect/decal/cleanable/food/egg_smudge
-	name = "Розбити яйце"
+	name = "Розбите яйце"
 	desc = "Схоже, це курча не вилупиться."
 	icon_state = "smashed_egg1"
 	random_icon_states = list("smashed_egg1", "smashed_egg2", "smashed_egg3")
@@ -55,6 +55,6 @@
 		qdel(src)
 
 /obj/effect/decal/cleanable/food/flour
-	name = "flour"
-	desc = "It's still good. Four second rule!"
+	name = "Борошно"
+	desc = "Досі можна використовувати. Правило чотирьох секунд!"
 	icon_state = "flour"

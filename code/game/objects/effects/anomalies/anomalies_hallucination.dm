@@ -1,6 +1,6 @@
 
 /obj/effect/anomaly/hallucination
-	name = "hallucination anomaly"
+	name = "Галюцинаційна аномалія"
 	icon_state = "hallucination"
 	aSignal = /obj/item/assembly/signaler/anomaly/hallucination
 	/// Time passed since the last effect, increased by seconds_per_tick of the SSobj
