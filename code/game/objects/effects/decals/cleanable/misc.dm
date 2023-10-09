@@ -149,7 +149,7 @@
 	clean_type = CLEAN_TYPE_HARD_DECAL
 
 /obj/effect/decal/cleanable/molten_object/large
-	name = "велика липка сіра рідина"
+	name = "Велика липка сіра рідина"
 	icon_state = "big_molten"
 	beauty = -300
 
@@ -242,7 +242,7 @@
 	pixel_x = rand(-10, 10)
 	pixel_y = rand(-10, 10)
 	if(!isnull(oldname))
-		desc = "The sad remains of what used to be [oldname]"
+		desc = "[oldname] або те що від них залишилось"
 	. = ..()
 
 /obj/effect/decal/cleanable/glitter
@@ -274,7 +274,7 @@
 
 /obj/effect/decal/cleanable/insectguts
 	name = "Нутрощі комах"
-	desc = "One bug squashed. Four more will rise in its place."
+	desc = "Одну комаху розчавили, тепер на її місці утворяться ще чотири."
 	icon = 'icons/effects/blood.dmi'
 	icon_state = "xfloor1"
 	random_icon_states = list("xfloor1", "xfloor2", "xfloor3", "xfloor4", "xfloor5", "xfloor6", "xfloor7")
@@ -300,16 +300,16 @@
 	icon_state = "paper_shreds"
 
 /obj/effect/decal/cleanable/wrapping/pinata
-	name = "pinata shreds"
-	desc = "Torn pieces of papier-mâché, left over from a pinata"
+	name = "Шматки піньяти"
+	desc = "Рвані шматки пап'є-маше, що залишилися від піньяти"
 	icon_state = "pinata_shreds"
 
 /obj/effect/decal/cleanable/wrapping/pinata/syndie
 	icon_state = "syndie_pinata_shreds"
 
 /obj/effect/decal/cleanable/garbage
-	name = "decomposing garbage"
-	desc = "A split open garbage bag, its stinking content seems to be partially liquified. Yuck!"
+	name = "Сміттєві відходи"
+	desc = "Розірваний сміттєвий пакет, схоже, що його смердючий вміст дещо зрідився. Фу!"
 	icon = 'icons/obj/debris.dmi'
 	icon_state = "garbage"
 	plane = GAME_PLANE
@@ -322,8 +322,8 @@
 	AddElement(/datum/element/swabable, CELL_LINE_TABLE_SLUDGE, CELL_VIRUS_TABLE_GENERIC, rand(2,4), 15)
 
 /obj/effect/decal/cleanable/ants
-	name = "space ants"
-	desc = "A small colony of space ants. They're normally used to the vacuum of space, so they can't climb too well."
+	name = "Космічні мурахи"
+	desc = "Маленька колонія космічних мурах. Вони не пристосовані до гравітації, тож лазять не надто добре."
 	icon = 'icons/obj/debris.dmi'
 	icon_state = "ants"
 	beauty = -150
@@ -402,8 +402,8 @@
 	qdel(src)
 
 /obj/effect/decal/cleanable/ants/fire
-	name = "space fire ants"
-	desc = "A small colony no longer. We are the fire nation."
+	name = "Космічні вогняні мурахи"
+	desc = "Більше не маленька колонія. Ми - нація вогню."
 	icon_state = "fire_ants"
 	mergeable_decal = FALSE
 
@@ -414,8 +414,8 @@
 	return
 
 /obj/effect/decal/cleanable/fuel_pool
-	name = "pool of fuel"
-	desc = "A pool of flammable fuel. Its probably wise to clean this off before something ignites it..."
+	name = "Калюжа палива"
+	desc = "Калюжа легкозаймистого палива. Мабуть, було б розумно прибрати її, перш ніж вона спалахне..."
 	icon_state = "fuel_pool"
 	layer = LOW_OBJ_LAYER
 	beauty = -50
