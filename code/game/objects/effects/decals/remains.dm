@@ -1,5 +1,5 @@
 /obj/effect/decal/remains
-	name = "Рештки"
+	name = "рештки"
 	gender = PLURAL
 	icon = 'icons/effects/blood.dmi'
 
@@ -68,5 +68,5 @@
 	icon_state = "remainsrobot"
 
 /obj/effect/decal/cleanable/robot_debris/old
-	name = "Пильні рештки робота"
+	name = "пильні рештки робота"
 	desc = "Давненько цим ніхто не користувався."
