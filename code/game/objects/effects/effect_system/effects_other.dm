@@ -66,7 +66,7 @@
 	effect_type = /obj/effect/particle_effect/steam
 
 /obj/effect/particle_effect/ion_trails
-	name = "ion trails"
+	name = "іонні сліди"
 	icon_state = "ion_trails"
 	anchored = TRUE
 

@@ -1,5 +1,5 @@
 /obj/effect/anomaly/flux
-	name = "Хвильова аномалія"
+	name = "хвильова аномалія"
 	icon_state = "flux"
 	density = TRUE
 	aSignal = /obj/item/assembly/signaler/anomaly/flux

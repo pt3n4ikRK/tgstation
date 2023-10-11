@@ -1,24 +1,24 @@
 /obj/effect/turf_decal/weather
-	name = "Піщана поверхня"
+	name = "піщана поверхня"
 	icon_state = "sandyfloor"
 
 /obj/effect/turf_decal/weather/snow
 	icon = 'icons/turf/overlays.dmi'
-	name = "Снігова поверхня"
+	name = "снігова поверхня"
 	icon_state = "snowfloor"
 
 /obj/effect/turf_decal/weather/snow/corner
 	icon = 'icons/turf/snow.dmi'
-	name = "Сніговий кутовий елемент"
+	name = "сніговий кутовий елемент"
 	icon_state = "snow_corner"
 
 /obj/effect/turf_decal/weather/dirt
-	name = "Земляний сайдинг"
+	name = "земляний сайдинг"
 	icon = 'icons/turf/decals.dmi'
 	icon_state = "dirt_side"
 
 /obj/effect/turf_decal/weather/sand
-	name = "Піщаний сайдинг"
+	name = "піщаний сайдинг"
 	icon = 'icons/misc/beach.dmi'
 	icon_state = "sand_side"
 

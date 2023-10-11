@@ -1,7 +1,7 @@
 // Note: BYOND is object oriented. There is no reason for this to be copy/pasted blood code.
 
 /obj/effect/decal/cleanable/robot_debris
-	name = "Механічні уламки"
+	name = "механічні уламки"
 	desc = "Безглузда купа брухту...<i>чи ні?</i>"
 	icon = 'icons/mob/silicon/robots.dmi'
 	icon_state = "gib1"
@@ -73,7 +73,7 @@
 	random_icon_states = list("gib1", "gib2", "gib3", "gib4", "gib5", "gib6", "gib7","gibdown","gibdown")
 
 /obj/effect/decal/cleanable/oil
-	name = "Машинне мастило"
+	name = "машинне мастило"
 	desc = "Чорне і маслянисте. Схоже, Біпскі знов заварив кашу."
 	icon = 'icons/mob/silicon/robots.dmi'
 	icon_state = "floor1"
