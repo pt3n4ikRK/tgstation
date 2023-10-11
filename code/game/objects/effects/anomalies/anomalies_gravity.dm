@@ -8,7 +8,7 @@
 	pixel_y = -176
 
 /obj/effect/anomaly/grav
-	name = "Гравітаційна аномалія"
+	name = "гравітаційна аномалія"
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "shield2"
 	density = FALSE
