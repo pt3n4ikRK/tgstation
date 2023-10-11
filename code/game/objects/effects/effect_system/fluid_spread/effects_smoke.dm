@@ -2,7 +2,7 @@
  * A fluid which spreads through the air affecting every mob it engulfs.
  */
 /obj/effect/particle_effect/fluid/smoke
-	name = "Дим"
+	name = "дим"
 	icon = 'icons/effects/96x96.dmi'
 	icon_state = "smoke"
 	pixel_x = -32
@@ -234,7 +234,7 @@
 
 /// Green smoke that makes you cough.
 /obj/effect/particle_effect/fluid/smoke/bad/green
-	name = "Зелений дим"
+	name = "зелений дим"
 	color = "#00FF00"
 	opacity = FALSE
 
@@ -244,7 +244,7 @@
 
 /// Black smoke that makes you cough. (Actually dark grey)
 /obj/effect/particle_effect/fluid/smoke/bad/black
-	name = "Чорний дим"
+	name = "чорний дим"
 	color = "#383838"
 	opacity = FALSE
 
@@ -258,7 +258,7 @@
 
 /// Light blue, transparent smoke which is usually paired with a blast that chills every turf in the area.
 /obj/effect/particle_effect/fluid/smoke/freezing
-	name = "Наноморозний дим"
+	name = "наноморозний дим"
 	color = "#B2FFFF"
 	opacity = FALSE
 
