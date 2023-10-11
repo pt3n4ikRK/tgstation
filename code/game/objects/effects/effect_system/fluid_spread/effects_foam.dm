@@ -11,7 +11,7 @@
  * Similar to smoke, but slower and mobs absorb its reagent through their exposed skin.
  */
 /obj/effect/particle_effect/fluid/foam
-	name = "Піна"
+	name = "піна"
 	icon_state = "foam"
 	opacity = FALSE
 	anchored = TRUE
@@ -225,7 +225,7 @@
 // Firefighting foam
 /// A variant of foam which absorbs plasma in the air if there is a fire.
 /obj/effect/particle_effect/fluid/foam/firefighting
-	name = "Протипожежна піна"
+	name = "протипожежна піна"
 	lifetime = 20 //doesn't last as long as normal foam
 	result_type = /obj/effect/decal/cleanable/plasma
 	allow_duplicate_results = FALSE
@@ -280,7 +280,7 @@
 
 /// A foam variant which
 /obj/effect/particle_effect/fluid/foam/metal
-	name = "Алюмінієвий пінометал"
+	name = "алюмінієвий пінометал"
 	result_type = /obj/structure/foamedmetal
 	icon_state = "mfoam"
 	slippery_foam = FALSE
@@ -299,7 +299,7 @@
 	layer = EDGED_TURF_LAYER
 	plane = GAME_PLANE_UPPER
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	name = "Пінометал"
+	name = "пінометал"
 	desc = "Легка структура зі спіненого металу, яку можна використовувати як основу для зведення стіни."
 	gender = PLURAL
 	max_integrity = 20
@@ -369,7 +369,7 @@
 
 /// A metal foam variant which produces slightly sturdier walls.
 /obj/effect/particle_effect/fluid/foam/metal/iron
-	name = "Залізний пінометал"
+	name = "залізний пінометал"
 	result_type = /obj/structure/foamedmetal/iron
 
 /// A factory which produces iron metal foam.
@@ -383,7 +383,7 @@
 
 /// A variant of metal foam which only produces walls at area boundaries.
 /obj/effect/particle_effect/fluid/foam/metal/smart
-	name = "Розумна піна"
+	name = "розумна піна"
 
 /// A factory which produces smart aluminium metal foam.
 /datum/effect_system/fluid_spread/foam/metal/smart
@@ -405,7 +405,7 @@
 
 /// A foam variant which produces atmos resin walls.
 /obj/effect/particle_effect/fluid/foam/metal/resin
-	name = "Смолиста піна"
+	name = "смолиста піна"
 	result_type = /obj/structure/foamedmetal/resin
 
 /// Atmos Backpack Resin, transparent, prevents atmos and filters the air
@@ -455,7 +455,7 @@
 	effect_type = /obj/effect/particle_effect/fluid/foam/dirty
 
 /obj/effect/particle_effect/fluid/foam/dirty
-	name = "Брудна піна"
+	name = "брудна піна"
 	allow_duplicate_results = FALSE
 	result_type = /obj/effect/decal/cleanable/dirt
 
