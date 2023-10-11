@@ -1,12 +1,12 @@
 /obj/effect/decal/cleanable/generic
-	name = "Безлад"
+	name = "безлад"
 	desc = "Хтось має це прибрати."
 	icon = 'icons/obj/debris.dmi'
 	icon_state = "shards"
 	beauty = -50
 
 /obj/effect/decal/cleanable/ash
-	name = "Попіл"
+	name = "попіл"
 	desc = "Прах до праху, пил до пилу, а тепер у космос."
 	icon = 'icons/obj/debris.dmi'
 	icon_state = "ash"
@@ -24,14 +24,14 @@
 	return !istype(here_turf, /obj/structure/bodycontainer/crematorium) && ..()
 
 /obj/effect/decal/cleanable/ash/large
-	name = "Велика купа попелу"
+	name = "велика купа попелу"
 	icon_state = "big_ash"
 	beauty = -100
 	decal_reagent = /datum/reagent/ash
 	reagent_amount = 60
 
 /obj/effect/decal/cleanable/glass
-	name = "Крихітні осколки"
+	name = "крихітні осколки"
 	desc = "І знов на пісок."
 	icon = 'icons/obj/debris.dmi'
 	icon_state = "tiny"
@@ -56,11 +56,11 @@
 
 //Screws that are dropped on the Z level below when deconstructing a reinforced floor plate.
 /obj/effect/decal/cleanable/glass/plastitanium/screws //I don't know how to sprite scattered screws, this can work until a spriter gets their hands on it.
-	name = "Купа шурупів"
+	name = "купа шурупів"
 	desc = "Виглядає наче вони впали зі стелі."
 
 /obj/effect/decal/cleanable/dirt
-	name = "Бруд"
+	name = "бруд"
 	desc = "Хтось має це прибрати."
 	icon = 'icons/effects/dirt.dmi'
 	icon_state = "dirt-flat-0"
@@ -90,7 +90,7 @@
 	return ..()
 
 /obj/effect/decal/cleanable/dirt/dust
-	name = "Пил"
+	name = "пил"
 	desc = "Тонкий шар пилу вкриває підлогу."
 	icon_state = "dust"
 	base_icon_state = "dust"
@@ -100,7 +100,7 @@
 	icon_state = base_icon_state
 
 /obj/effect/decal/cleanable/greenglow
-	name = "Сяючий слиз"
+	name = "сяючий слиз"
 	desc = "Божечки. Сподіваюсь це не на перекус."
 	icon_state = "greenglow"
 	light_power = 3
@@ -120,12 +120,12 @@
 	. = ..()
 
 /obj/effect/decal/cleanable/greenglow/ecto
-	name = "Ектоплазматична калюжа"
+	name = "ектоплазматична калюжа"
 	desc = "Ви знаєте кому телефонувати."
 	light_power = 2
 
 /obj/effect/decal/cleanable/cobweb
-	name = "Павутиння"
+	name = "павутиння"
 	desc = "Хтось має це прибрати."
 	gender = NEUTER
 	layer = WALL_OBJ_LAYER
@@ -139,7 +139,7 @@
 	icon_state = "cobweb2"
 
 /obj/effect/decal/cleanable/molten_object
-	name = "Липка сіра рідина"
+	name = "липка сіра рідина"
 	desc = "Схоже на розплавлене...щось."
 	gender = NEUTER
 	icon = 'icons/effects/effects.dmi'
@@ -149,13 +149,13 @@
 	clean_type = CLEAN_TYPE_HARD_DECAL
 
 /obj/effect/decal/cleanable/molten_object/large
-	name = "Велика липка сіра рідина"
+	name = "велика липка сіра рідина"
 	icon_state = "big_molten"
 	beauty = -300
 
 //Vomit (sorry)
 /obj/effect/decal/cleanable/vomit
-	name = "Рвота"
+	name = "рвота"
 	desc = "Боже, як незручно."
 	icon = 'icons/effects/blood.dmi'
 	icon_state = "vomit_1"
@@ -183,13 +183,13 @@
 	random_icon_states = list("vomitpurp_1", "vomitpurp_2", "vomitpurp_3", "vomitpurp_4")
 
 /obj/effect/decal/cleanable/vomit/nanites
-	name = "Насичена нанітами рвота"
+	name = "насичена нанітами рвота"
 	desc = "Боже, можна розгледіти, ніби там щось ворушиться."
 	icon_state = "vomitnanite_1"
 	random_icon_states = list("vomitnanite_1", "vomitnanite_2", "vomitnanite_3", "vomitnanite_4")
 
 /obj/effect/decal/cleanable/vomit/nebula
-	name = "Галактично-туманна рвота"
+	name = "галактично-туманна рвота"
 	desc = "Боже, як...прекрасно."
 	icon_state = "vomitnebula_1"
 	random_icon_states = list("vomitnebula_1", "vomitnebula_2", "vomitnebula_3", "vomitnebula_4")
@@ -204,7 +204,7 @@
 	. += emissive_appearance(icon, icon_state, src, alpha = src.alpha)
 
 /obj/effect/decal/cleanable/vomit/old
-	name = "Підсохла рвота"
+	name = "підсохла рвота"
 	desc = "Ви намагаєтесь не дивитися на шматочки їжі. Не вийшло."
 
 /obj/effect/decal/cleanable/vomit/old/Initialize(mapload, list/datum/disease/diseases)
@@ -213,19 +213,19 @@
 	AddElement(/datum/element/swabable, CELL_LINE_TABLE_SLUDGE, CELL_VIRUS_TABLE_GENERIC, rand(2,4), 10)
 
 /obj/effect/decal/cleanable/vomit/old/black_bile
-	name = "Чорна жовч"
+	name = "чорна жовч"
 	desc = "Там щось ворушиться..."
 	color = COLOR_DARK
 
 /obj/effect/decal/cleanable/chem_pile
-	name = "Купа хімікатів"
+	name = "купа хімікатів"
 	desc = "Ви не можете визначити, що там знаходиться."
 	gender = NEUTER
 	icon = 'icons/obj/debris.dmi'
 	icon_state = "ash"
 
 /obj/effect/decal/cleanable/shreds
-	name = "Клапті"
+	name = "клапті"
 	desc = "Подрібнені рештки того, що схоже на одяг."
 	icon_state = "shreds"
 	gender = PLURAL
@@ -246,7 +246,7 @@
 	. = ..()
 
 /obj/effect/decal/cleanable/glitter
-	name = "Пучок блискіток"
+	name = "пучок блискіток"
 	desc = "Герпес декоративно-прикладного мистецтва."
 	icon = 'icons/effects/atmospherics.dmi'
 	icon_state = "plasma_old"
@@ -254,53 +254,53 @@
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 
 /obj/effect/decal/cleanable/glitter/pink
-	name = "Рожеві блискітки"
+	name = "рожеві блискітки"
 	icon_state = "plasma"
 
 /obj/effect/decal/cleanable/glitter/white
-	name = "Білі блискітки"
+	name = "білі блискітки"
 	icon_state = "nitrous_oxide"
 
 /obj/effect/decal/cleanable/glitter/blue
-	name = "Сині блискітки"
+	name = "сині блискітки"
 	icon_state = "freon"
 
 /obj/effect/decal/cleanable/plasma
-	name = "Стабілізована плазма"
+	name = "стабілізована плазма"
 	desc = "Калюжа стабілізованої плазми."
 	icon_state = "flour"
 	icon = 'icons/effects/tomatodecal.dmi'
 	color = "#2D2D2D"
 
 /obj/effect/decal/cleanable/insectguts
-	name = "Нутрощі комах"
-	desc = "Одну комаху розчавили, тепер на її місці утворяться ще чотири."
+	name = "розчавлена комаха"
+	desc = "Одну комаху розчавили, тепер на її місці з'явиться ще чотири."
 	icon = 'icons/effects/blood.dmi'
 	icon_state = "xfloor1"
 	random_icon_states = list("xfloor1", "xfloor2", "xfloor3", "xfloor4", "xfloor5", "xfloor6", "xfloor7")
 
 /obj/effect/decal/cleanable/confetti
-	name = "Конфетті"
+	name = "конфетті"
 	desc = "Дрібні шматочки кольорового паперу, розкидані на радість прибиральнику!"
 	icon = 'icons/effects/confetti_and_decor.dmi'
 	icon_state = "confetti"
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT //the confetti itself might be annoying enough
 
 /obj/effect/decal/cleanable/plastic
-	name = "Пластикові обрізки"
+	name = "пластикові обрізки"
 	desc = "Шматки розірваного, зламаного, непридатного пластику."
 	icon = 'icons/obj/debris.dmi'
 	icon_state = "shards"
 	color = "#c6f4ff"
 
 /obj/effect/decal/cleanable/wrapping
-	name = "Пакувальні клоччя"
+	name = "пакувальні клоччя"
 	desc = "Розірвані шматки картону та паперу, що лишилися від упаковки."
 	icon = 'icons/obj/debris.dmi'
 	icon_state = "paper_shreds"
 
 /obj/effect/decal/cleanable/wrapping/pinata
-	name = "Шматки піньяти"
+	name = "шматки піньяти"
 	desc = "Рвані шматки пап'є-маше, що залишилися від піньяти"
 	icon_state = "pinata_shreds"
 
@@ -308,7 +308,7 @@
 	icon_state = "syndie_pinata_shreds"
 
 /obj/effect/decal/cleanable/garbage
-	name = "Сміттєві відходи"
+	name = "сміттєві відходи"
 	desc = "Розірваний сміттєвий пакет, схоже, що його смердючий вміст дещо зрідився. Фу!"
 	icon = 'icons/obj/debris.dmi'
 	icon_state = "garbage"
@@ -322,7 +322,7 @@
 	AddElement(/datum/element/swabable, CELL_LINE_TABLE_SLUDGE, CELL_VIRUS_TABLE_GENERIC, rand(2,4), 15)
 
 /obj/effect/decal/cleanable/ants
-	name = "Космічні мурахи"
+	name = "космічні мурахи"
 	desc = "Маленька колонія космічних мурах. Вони не пристосовані до гравітації, тож лазять не надто добре."
 	icon = 'icons/obj/debris.dmi'
 	icon_state = "ants"
@@ -402,7 +402,7 @@
 	qdel(src)
 
 /obj/effect/decal/cleanable/ants/fire
-	name = "Космічні вогняні мурахи"
+	name = "космічні вогняні мурахи"
 	desc = "Більше не маленька колонія. Ми - нація вогню."
 	icon_state = "fire_ants"
 	mergeable_decal = FALSE
@@ -414,7 +414,7 @@
 	return
 
 /obj/effect/decal/cleanable/fuel_pool
-	name = "Калюжа палива"
+	name = "калюжа палива"
 	desc = "Калюжа легкозаймистого палива. Мабуть, було б розумно прибрати її, перш ніж вона спалахне..."
 	icon_state = "fuel_pool"
 	layer = LOW_OBJ_LAYER
