@@ -13,7 +13,7 @@
 
 
 /obj/effect/particle_effect/sparks
-	name = "sparks"
+	name = "іскри"
 	icon_state = "sparks"
 	anchored = TRUE
 	light_system = MOVABLE_LIGHT
@@ -55,11 +55,11 @@
 //electricity
 
 /obj/effect/particle_effect/sparks/electricity
-	name = "lightning"
+	name = "блискавка"
 	icon_state = "electricity"
 
 /obj/effect/particle_effect/sparks/quantum
-	name = "quantum sparks"
+	name = "квантові іскри"
 	icon_state = "quantum_sparks"
 
 /datum/effect_system/lightning_spread
