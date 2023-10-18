@@ -157,8 +157,13 @@
 		return round(time_left)
 
 /obj/effect/countdown/arena
+
 	invisibility = 0
 	name = "Зворотний відлік арени"
+
+	invisibility = INVISIBILITY_NONE
+	name = "arena countdown"
+
 
 /obj/effect/countdown/arena/get_value()
 	var/obj/machinery/arena_spawn/A = attached_to
