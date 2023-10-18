@@ -1,6 +1,6 @@
 /obj/effect/forcefield
-	name = "FORCEWALL"
-	desc = "A space wizard's magic wall."
+	name = "СИЛОВЕ ПОЛЕ"
+	desc = "Магічна стіна космічного чарівника."
 	icon_state = "m_shield"
 	anchored = TRUE
 	opacity = FALSE
@@ -42,8 +42,8 @@
 
 /// Cult forcefields
 /obj/effect/forcefield/cult
-	name = "glowing wall"
-	desc = "An unholy shield that blocks all attacks."
+	name = "Сяюча стіна"
+	desc = "Нечестивий щит, що блокує всі атаки."
 	icon = 'icons/effects/cult/effects.dmi'
 	icon_state = "cultshield"
 	can_atmos_pass = ATMOS_PASS_NO
@@ -58,19 +58,19 @@
 
 /obj/effect/forcefield/mime
 	icon_state = "nothing"
-	name = "invisible wall"
-	desc = "You have a bad feeling about this."
+	name = "Невидима стіна"
+	desc = "У вас погане передчуття щодо цього."
 	alpha = 0
 
 /obj/effect/forcefield/mime/advanced
-	name = "invisible blockade"
-	desc = "You're gonna be here awhile."
+	name = "Невидима блокада"
+	desc = "Ви пробудете тут деякий час."
 	initial_duration = 1 MINUTES
 
 /// Psyker forcefield
 /obj/effect/forcefield/psychic
-	name = "psychic forcefield"
-	desc = "A wall of psychic energy powerful enough stop the motion of objects. Projectiles ricochet."
+	name = "Психічне силове поле"
+	desc = "Стіна психічної енергії, настільки потужної, що спиняє рух об'єктів. Відбиває знаряддя."
 	icon_state = "psychic"
 	can_atmos_pass = ATMOS_PASS_YES
 	flags_ricochet = RICOCHET_SHINY | RICOCHET_HARD
@@ -79,8 +79,8 @@
 
 /// The cosmic heretics forcefield
 /obj/effect/forcefield/cosmic_field
-	name = "Cosmic Field"
-	desc = "A field that cannot be passed by people marked with a cosmic star."
+	name = "Космічне поле"
+	desc = "Поле, через яке не можуть пройти люди. Позначене космічною зіркою."
 	icon = 'icons/effects/eldritch.dmi'
 	icon_state = "cosmic_carpet"
 	anchored = TRUE

@@ -1,7 +1,7 @@
 //Anomalies, used for anomaly events. Anomalies cause adverse effects on their surroundings and can be mitigated by signalling their respective frequency.
 /obj/effect/anomaly
-	name = "anomaly"
-	desc = "A mysterious anomaly, seen commonly only in the region of space that the station orbits..."
+	name = "аномалія"
+	desc = "Загадкова аномалія, яка трапляється лише в тій частині космосу, де перебуває станція..."
 	icon = 'icons/effects/anomalies.dmi'
 	icon_state = "vortex"
 	density = FALSE
@@ -111,7 +111,7 @@
 ///Stabilize an anomaly, letting it stay around forever or untill destabilizes by a player. An anomaly without a core can't be signalled, but can be destabilized
 /obj/effect/anomaly/proc/stabilize(anchor = FALSE, has_core = TRUE)
 	immortal = TRUE
-	name = (has_core ? "stable " : "hollow ") + name
+	name = (has_core ? "стабільна " : "порожня ") + name
 	if(!has_core)
 		drops_core = FALSE
 		QDEL_NULL(aSignal)

@@ -1,6 +1,6 @@
 //Used by spraybottles.
 /obj/effect/decal/chempuff
-	name = "chemicals"
+	name = "хімікати"
 	icon = 'icons/obj/medical/chempuff.dmi'
 	pass_flags = PASSTABLE | PASSGRILLE
 	layer = FLY_LAYER
@@ -84,8 +84,8 @@
 		end_life(source)
 
 /obj/effect/decal/fakelattice
-	name = "lattice"
-	desc = "A lightweight support lattice."
+	name = "решітка"
+	desc = "Облегшена допоміжна решітка."
 	icon = 'icons/obj/smooth_structures/lattice.dmi'
 	icon_state = "lattice-255"
 	density = TRUE

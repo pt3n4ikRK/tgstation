@@ -1,8 +1,8 @@
 
 /obj/effect/anomaly/bhole
-	name = "vortex anomaly"
+	name = "вихрова аномалія"
 	icon_state = "vortex"
-	desc = "That's a nice station you have there. It'd be a shame if something happened to it."
+	desc = "Гарна у вас тут станція, буде прикро, якщо з нею щось трапиться."
 	aSignal = /obj/item/assembly/signaler/anomaly/vortex
 
 /obj/effect/anomaly/bhole/anomalyEffect()
