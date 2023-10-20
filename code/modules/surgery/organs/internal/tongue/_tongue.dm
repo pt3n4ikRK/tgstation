@@ -26,7 +26,7 @@
 	var/list/languages_native
 	///changes the verbage of how you speak. (Permille -> says <-, "I just used a verb!")
 	///i hate to say it, but because of sign language, this may have to be a component. and we may have to do some insane shit like putting a component on a component
-	var/say_mod = "says"
+	var/say_mod = "каже"
 	///for temporary overrides of the above variable.
 	var/temp_say_mod = ""
 
@@ -175,7 +175,7 @@
 	name = "forked tongue"
 	desc = "A thin and long muscle typically found in reptilian races, apparently moonlights as a nose."
 	icon_state = "tonguelizard"
-	say_mod = "hisses"
+	say_mod = "шипить"
 	taste_sensitivity = 10 // combined nose + tongue, extra sensitive
 	modifies_speech = TRUE
 	languages_native = list(/datum/language/draconic)
@@ -352,7 +352,7 @@
 	name = "superlingual matrix"
 	desc = "A mysterious structure that allows for instant communication between users. Pretty impressive until you need to eat something."
 	icon_state = "tongueayylmao"
-	say_mod = "gibbers"
+	say_mod = "торохтить"
 	sense_of_taste = FALSE
 	modifies_speech = TRUE
 	var/mothership
@@ -405,7 +405,7 @@
 	name = "rotting tongue"
 	desc = "Between the decay and the fact that it's just lying there you doubt a tongue has ever seemed less sexy."
 	icon_state = "tonguezombie"
-	say_mod = "moans"
+	say_mod = "стогне"
 	modifies_speech = TRUE
 	taste_sensitivity = 32
 	liked_foodtypes = GROSS | MEAT | RAW | GORE
@@ -472,7 +472,7 @@ GLOBAL_LIST_INIT(english_to_zombie, list())
 	name = "alien tongue"
 	desc = "According to leading xenobiologists the evolutionary benefit of having a second mouth in your mouth is \"that it looks badass\"."
 	icon_state = "tonguexeno"
-	say_mod = "hisses"
+	say_mod = "шипить"
 	taste_sensitivity = 10 // LIZARDS ARE ALIENS CONFIRMED
 	modifies_speech = TRUE // not really, they just hiss
 	voice_filter = @{"[0:a] asplit [out0][out2]; [out0] asetrate=%SAMPLE_RATE%*0.8,aresample=%SAMPLE_RATE%,atempo=1/0.8,aformat=channel_layouts=mono [p0]; [out2] asetrate=%SAMPLE_RATE%*1.2,aresample=%SAMPLE_RATE%,atempo=1/1.2,aformat=channel_layouts=mono[p2]; [p0][0][p2] amix=inputs=3"}
@@ -497,7 +497,7 @@ GLOBAL_LIST_INIT(english_to_zombie, list())
 	name = "bone \"tongue\""
 	desc = "Apparently skeletons alter the sounds they produce through oscillation of their teeth, hence their characteristic rattling."
 	icon_state = "tonguebone"
-	say_mod = "rattles"
+	say_mod = "колотить кістками"
 	attack_verb_continuous = list("bites", "chatters", "chomps", "enamelles", "bones")
 	attack_verb_simple = list("bite", "chatter", "chomp", "enamel", "bone")
 	sense_of_taste = FALSE
@@ -539,7 +539,7 @@ GLOBAL_LIST_INIT(english_to_zombie, list())
 	failing_desc = "seems to be broken."
 	organ_flags = ORGAN_ROBOTIC
 	icon_state = "tonguerobot"
-	say_mod = "states"
+	say_mod = "синтезує"
 	attack_verb_continuous = list("beeps", "boops")
 	attack_verb_simple = list("beep", "boop")
 	modifies_speech = TRUE
@@ -573,7 +573,7 @@ GLOBAL_LIST_INIT(english_to_zombie, list())
 	name = "electric discharger"
 	desc = "A sophisticated ethereal organ, capable of synthesising speech via electrical discharge."
 	icon_state = "electrotongue"
-	say_mod = "crackles"
+	say_mod = "тріщить"
 	taste_sensitivity = 10 // ethereal tongues function (very loosely) like a gas spectrometer: vaporising a small amount of the food and allowing it to pass to the nose, resulting in more sensitive taste
 	liked_foodtypes = NONE //no food is particularly liked by ethereals
 	disliked_foodtypes = GROSS
@@ -589,14 +589,14 @@ GLOBAL_LIST_INIT(english_to_zombie, list())
 /obj/item/organ/internal/tongue/cat
 	name = "felinid tongue"
 	desc = "A fleshy muscle mostly used for meowing."
-	say_mod = "meows"
+	say_mod = "нявкає"
 	liked_foodtypes = SEAFOOD | ORANGES | BUGS | GORE
 	disliked_foodtypes = GROSS | CLOTH | RAW
 
 /obj/item/organ/internal/tongue/jelly
 	name = "jelly tongue"
 	desc = "Ah... That's not the sound I expected it to make. Sounds like a Space Autumn Bird."
-	say_mod = "chirps"
+	say_mod = "стрекоче"
 	liked_foodtypes = MEAT | BUGS
 	disliked_foodtypes = GROSS
 	toxic_foodtypes = NONE
@@ -610,14 +610,14 @@ GLOBAL_LIST_INIT(english_to_zombie, list())
 /obj/item/organ/internal/tongue/monkey
 	name = "primitive tongue"
 	desc = "For aggressively chimpering. And consuming bananas."
-	say_mod = "chimpers"
+	say_mod = "балакає"
 	liked_foodtypes = MEAT | FRUIT | BUGS
 	disliked_foodtypes = CLOTH
 
 /obj/item/organ/internal/tongue/moth
 	name = "moth tongue"
 	desc = "Moths don't have tongues. Someone get god on the phone, tell them I'm not happy."
-	say_mod = "flutters"
+	say_mod = "вібрує"
 	liked_foodtypes = VEGETABLES | DAIRY | CLOTH
 	disliked_foodtypes = FRUIT | GROSS | BUGS | GORE
 	toxic_foodtypes = MEAT | RAW | SEAFOOD
@@ -625,7 +625,7 @@ GLOBAL_LIST_INIT(english_to_zombie, list())
 /obj/item/organ/internal/tongue/zombie
 	name = "rotting tongue"
 	desc = "Makes you speak like you're at the dentist and you just absolutely refuse to spit because you forgot to mention you were allergic to space shellfish."
-	say_mod = "moans"
+	say_mod = "стогне"
 
 /obj/item/organ/internal/tongue/mush
 	name = "mush-tongue-room"
@@ -637,7 +637,7 @@ GLOBAL_LIST_INIT(english_to_zombie, list())
 /obj/item/organ/internal/tongue/pod
 	name = "pod tongue"
 	desc = "A plant-like organ used for speaking and eating."
-	say_mod = "whistles"
+	say_mod = "свистить"
 	liked_foodtypes = VEGETABLES | FRUIT | GRAIN
 	disliked_foodtypes = GORE | MEAT | DAIRY | SEAFOOD | BUGS
 
@@ -646,7 +646,7 @@ GLOBAL_LIST_INIT(english_to_zombie, list())
 	desc = "This silicate plate doesn't seem particularly mobile, but golems use it to form sounds."
 	color = COLOR_WEBSAFE_DARK_GRAY
 	organ_flags = ORGAN_MINERAL
-	say_mod = "rumbles"
+	say_mod = "гуркотить"
 	sense_of_taste = FALSE
 	liked_foodtypes = STONE
 	disliked_foodtypes = NONE //you don't care for much else besides stone
