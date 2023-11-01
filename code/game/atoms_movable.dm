@@ -21,12 +21,12 @@
 	/// The list of factions this atom belongs to
 	var/list/faction
 
-	var/verb_say = "says"
-	var/verb_ask = "asks"
-	var/verb_exclaim = "exclaims"
-	var/verb_whisper = "whispers"
-	var/verb_sing = "sings"
-	var/verb_yell = "yells"
+	var/verb_say = "каже"
+	var/verb_ask = "питає"
+	var/verb_exclaim = "вигукує"
+	var/verb_whisper = "шепоче"
+	var/verb_sing = "співає"
+	var/verb_yell = "кричить"
 	var/speech_span
 	///Are we moving with inertia? Mostly used as an optimization
 	var/inertia_moving = FALSE
