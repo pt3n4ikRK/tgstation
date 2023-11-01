@@ -25,7 +25,7 @@
 	var/verb_ask = "питає"
 	var/verb_exclaim = "вигукує"
 	var/verb_whisper = "шепоче"
-	var/verb_sing = "співає"
+	var/verb_sing = "жестикулює"
 	var/verb_yell = "кричить"
 	var/speech_span
 	///Are we moving with inertia? Mostly used as an optimization
