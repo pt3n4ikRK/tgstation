@@ -69,7 +69,7 @@
 	var/mob/living/carbon/carbon_parent = parent
 	var/obj/item/organ/internal/tongue/tongue = carbon_parent.get_organ_slot(ORGAN_SLOT_TONGUE)
 	if(tongue)
-		tongue.temp_say_mod = "жестикулює"
+		tongue.temp_say_mod = "signs"
 	//this speech relies on hands, which we have our own way of garbling speech when they're occupied, so we can have this always on
 	ADD_TRAIT(carbon_parent, TRAIT_SPEAKS_CLEARLY, SPEAKING_FROM_HANDS)
 	carbon_parent.verb_ask = "жестикулює"
