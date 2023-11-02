@@ -69,15 +69,15 @@
 	var/mob/living/carbon/carbon_parent = parent
 	var/obj/item/organ/internal/tongue/tongue = carbon_parent.get_organ_slot(ORGAN_SLOT_TONGUE)
 	if(tongue)
-		tongue.temp_say_mod = "signs"
+		tongue.temp_say_mod = "жестикулює"
 	//this speech relies on hands, which we have our own way of garbling speech when they're occupied, so we can have this always on
 	ADD_TRAIT(carbon_parent, TRAIT_SPEAKS_CLEARLY, SPEAKING_FROM_HANDS)
-	carbon_parent.verb_ask = "signs"
-	carbon_parent.verb_exclaim = "signs"
-	carbon_parent.verb_whisper = "subtly signs"
-	carbon_parent.verb_sing = "rythmically signs"
-	carbon_parent.verb_yell = "emphatically signs"
-	carbon_parent.bubble_icon = "signlang"
+	carbon_parent.verb_ask = "жестикулює"
+	carbon_parent.verb_exclaim = "жестикулює"
+	carbon_parent.verb_whisper = "делікатно жестикулює"
+	carbon_parent.verb_sing = "ритмічно жестикулює"
+	carbon_parent.verb_yell = "наполегливо жестикулює"
+	carbon_parent.bubble_icon = "Мова жестів"
 	RegisterSignal(carbon_parent, COMSIG_CARBON_GAIN_ORGAN, PROC_REF(on_added_organ))
 	RegisterSignal(carbon_parent, COMSIG_LIVING_TRY_SPEECH, PROC_REF(on_try_speech))
 	RegisterSignal(carbon_parent, COMSIG_LIVING_TREAT_MESSAGE, PROC_REF(on_treat_living_message))
