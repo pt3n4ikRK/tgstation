@@ -69,7 +69,7 @@
 	var/mob/living/carbon/carbon_parent = parent
 	var/obj/item/organ/internal/tongue/tongue = carbon_parent.get_organ_slot(ORGAN_SLOT_TONGUE)
 	if(tongue)
-		tongue.temp_say_mod = "signs"
+		tongue.temp_say_mod = "жестикулює"
 	//this speech relies on hands, which we have our own way of garbling speech when they're occupied, so we can have this always on
 	ADD_TRAIT(carbon_parent, TRAIT_SPEAKS_CLEARLY, SPEAKING_FROM_HANDS)
 	carbon_parent.verb_ask = "жестикулює"
@@ -77,7 +77,7 @@
 	carbon_parent.verb_whisper = "делікатно жестикулює"
 	carbon_parent.verb_sing = "ритмічно жестикулює"
 	carbon_parent.verb_yell = "наполегливо жестикулює"
-	carbon_parent.bubble_icon = "Мова жестів"
+	carbon_parent.bubble_icon = "signlang"
 	RegisterSignal(carbon_parent, COMSIG_CARBON_GAIN_ORGAN, PROC_REF(on_added_organ))
 	RegisterSignal(carbon_parent, COMSIG_LIVING_TRY_SPEECH, PROC_REF(on_try_speech))
 	RegisterSignal(carbon_parent, COMSIG_LIVING_TREAT_MESSAGE, PROC_REF(on_treat_living_message))
@@ -123,7 +123,7 @@
 	if(!istype(new_organ, /obj/item/organ/internal/tongue))
 		return
 	var/obj/item/organ/internal/tongue/new_tongue = new_organ
-	new_tongue.temp_say_mod = "signs"
+	new_tongue.temp_say_mod = "жестикулює"
 
 /// Signal proc for [COMSIG_LIVING_TRY_SPEECH]
 /// Sign languagers can always speak regardless of they're mute (as long as they're not mimes)
@@ -137,23 +137,23 @@
 
 	switch(check_signables_state())
 		if(SIGN_HANDS_FULL) // Full hands
-			carbon_parent.visible_message("tries to sign, but can't with [carbon_parent.p_their()] hands full!", visible_message_flags = EMOTE_MESSAGE)
+			carbon_parent.visible_message("намагається жестикулювати, але у [carbon_parent.p_their()] зайняті руки!", visible_message_flags = EMOTE_MESSAGE)
 			return COMPONENT_CANNOT_SPEAK
 
 		if(SIGN_CUFFED) // Restrained
-			carbon_parent.visible_message("tries to sign, but can't with [carbon_parent.p_their()] hands bound!", visible_message_flags = EMOTE_MESSAGE)
+			carbon_parent.visible_message("намагається жестикулювати, але [carbon_parent.p_their()] не може зі зв'язаними руками!", visible_message_flags = EMOTE_MESSAGE)
 			return COMPONENT_CANNOT_SPEAK
 
 		if(SIGN_ARMLESS) // No arms
-			to_chat(carbon_parent, span_warning("You can't sign with no hands!"))
+			to_chat(carbon_parent, span_warning("Ви не можете жестикулювати без рук!"))
 			return COMPONENT_CANNOT_SPEAK
 
 		if(SIGN_ARMS_DISABLED) // Arms but they're disabled
-			to_chat(carbon_parent, span_warning("You can't sign with your hands right now!"))
+			to_chat(carbon_parent, span_warning("Ви не можете жестикулювати вашими руками зараз!"))
 			return COMPONENT_CANNOT_SPEAK
 
 		if(SIGN_TRAIT_BLOCKED) // Hands blocked or emote mute
-			to_chat(carbon_parent, span_warning("You can't sign at the moment!"))
+			to_chat(carbon_parent, span_warning("Ви не можете жестикулювати на даний момент!"))
 			return COMPONENT_CANNOT_SPEAK
 
 	// Assuming none of the above fail, sign language users can speak
