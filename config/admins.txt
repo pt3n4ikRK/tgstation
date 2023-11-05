@@ -8,3 +8,4 @@ Pt3n4ik = Host
 Lumduc = Game Master
 Rozuzaken = Game Master
 Enjern447 = Trial Admin
+LinkRoll = Game Admin
