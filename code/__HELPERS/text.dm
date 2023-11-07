@@ -88,7 +88,7 @@
  * * Presence of the <, >, \ and / characters.
  * * Presence of ASCII special control characters (horizontal tab and new line not included).
  * */
-/proc/reject_bad_text(text, max_length = 512, ascii_only = TRUE)
+/proc/reject_bad_text(text, max_length = 512, ascii_only = FALSE)
 	if(ascii_only)
 		if(length(text) > max_length)
 			return null
